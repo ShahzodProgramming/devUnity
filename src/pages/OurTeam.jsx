@@ -117,7 +117,7 @@ export const OurTeam = ({ darkMode }) => {
                 darkMode ? "text-white" : "text-gray-800"
               }`}
             >
-              Sarah Khan
+              Shahzod
             </h3>
             <p className="text-green-600 font-medium mb-2">UI/UX Designer</p>
             <p
@@ -182,7 +182,7 @@ export const OurTeam = ({ darkMode }) => {
                 darkMode ? "text-white" : "text-gray-800"
               }`}
             >
-              Michael Chen
+              Komron
             </h3>
             <p className="text-purple-600 font-medium mb-2">
               Backend Developer

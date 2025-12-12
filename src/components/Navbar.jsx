@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export const Navbar = ({ darkMode, setDarkMode }) => {
   return (
-    <nav className="flex justify-between items-center">
+    <nav className="flex justify-between items-center mb-10">
       <img src={logo} alt="Logo" className="max-w-20 hidden md:block" />
 
       <ul className="flex gap-6 ">

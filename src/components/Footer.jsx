@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const Footer = ({ darkMode }) => {
   return (
-    <div className="about-footer mt-10">
+    <div className="about-footer mt-20">
       <hr className="w-full border-dashed border-2 border-gray-500 " />
 
       <div
