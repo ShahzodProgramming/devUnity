@@ -3,6 +3,9 @@ import { Navbar } from "./components/Navbar";
 import { Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { About } from "./pages/About";
+import { Footer } from "./components/Footer";
+import { OurTeam } from "./pages/OurTeam";
+import { Contact } from "./pages/Contact";
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(true);
@@ -27,8 +30,10 @@ const App = () => {
             path="/about"
             element={<About darkMode={darkMode} setDarkMode={setDarkMode} />}
           />
-        </Routes>
 
+          <Route path="/team" element={<OurTeam darkMode={darkMode} />} />
+          <Route path="/contact" element={<Contact darkMode={darkMode} />} />
+        </Routes>
       </div>
     </div>
   );

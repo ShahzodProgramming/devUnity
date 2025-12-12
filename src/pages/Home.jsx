@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../assets/imgs/logo_full.png";
 import { motion } from "motion/react";
 import { twMerge } from "tailwind-merge";
+import { Footer } from "../components/Footer";
 
 export const Home = ({ darkMode, setDarkMode }) => {
   return (
@@ -13,7 +14,6 @@ export const Home = ({ darkMode, setDarkMode }) => {
           Transforming Ideas into Reality
         </h2>
       </div>
-
       <div className="home-about flex flex-col gap-5 mt-50">
         <h1 className="text-2xl text-center font-bold">Why Join Dev Unity</h1>
 
@@ -96,7 +96,7 @@ export const Home = ({ darkMode, setDarkMode }) => {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-10 items-center-safe mt-10">
+        <div className="flex flex-col lg:flex-row gap-10 items-center-safe mt-10 mb-20">
           <motion.img
             src={logo}
             className="bg-cyan-900 rounded-lg max-w-120 w-[70%] hover:bg-cyan-950 hover:scale-105 transition-all"
@@ -138,6 +138,7 @@ export const Home = ({ darkMode, setDarkMode }) => {
           </div>
         </div>
       </div>
+      <Footer darkMode={darkMode} />
     </div>
   );
 };
