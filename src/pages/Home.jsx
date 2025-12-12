@@ -27,7 +27,7 @@ export const Home = ({ darkMode, setDarkMode }) => {
             className={
               darkMode
                 ? "content bg-gray-800 p-5 hover:bg-gray-900 transition-all hover:rounded-2xl"
-                : "bg-gray-200 hover:bg-gray-300 transition-all hover:rounded-2xl"
+                : "bg-gray-200 p-5 hover:bg-gray-300 transition-all hover:rounded-2xl"
             }
           >
             <div className="hover:scale-104 origin-top-left transition-transform duration-300">

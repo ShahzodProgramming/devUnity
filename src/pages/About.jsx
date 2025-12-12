@@ -32,14 +32,16 @@ export const About = ({ darkMode, setDarkMode }) => {
       </div>
 
       <div className="about-faculty mt-40 max-w-5xl mx-auto">
-        <h1 className="text-6xl text-center mb-5">Message from our Faculty</h1>
+        <h1 className="text-6xl text-center mb-10 font-bold">
+          Message from our Faculty
+        </h1>
 
         <div className="about-people flex flex-col gap-10">
           <div
             className={
               darkMode
-                ? "card mt-5 flex bg-gray-900 rounded items-center gap-5 flex-col md:flex-row"
-                : "card mt-5 flex bg-gray-200 rounded items-center gap-5 flex-col md:flex-row"
+                ? "card mt-5 flex bg-gray-900 rounded items-center gap-5 flex-col md:flex-row-reverse"
+                : "card mt-5 flex bg-gray-200 rounded items-center gap-5 flex-col md:flex-row-reverse"
             }
           >
             <div className="flex flex-col pl-5 pr-5 justify-between ">
@@ -98,27 +100,23 @@ export const About = ({ darkMode, setDarkMode }) => {
 
             <div className="flex flex-col pl-5 pr-5 justify-between ">
               <p className="text-lg">
-                I’m here to remind you of something crucial: the power of
-                motivation. We’ve accomplished so much together, but our journey
-                is far from over. The key to our success is staying motivated
-                and never losing sight of our goals. When things get tough,
-                that’s when we need to push even harder. Remember, challenges
-                are just opportunities in disguise. Every obstacle we face is a
-                chance to grow and improve. Let’s stay focused, keep our energy
-                high, and always strive for excellence. Together, we can achieve
-                incredible things. Let’s keep moving forward with passion and
-                determination.
+                Every day, Dev Unity becomes stronger because we keep learning
+                and growing together. Our progress comes from teamwork,
+                dedication, and the desire to improve, no matter how small the
+                step is. Let’s continue supporting each other, staying
+                motivated, and pushing our creativity forward. The more united
+                we are, the more we can achieve.
               </p>
 
               <p className="text-right text-lg mt-10">
-                -Izzatbek Akbarov (The motivator of Dev Unity)
+                – Shahzod Nizamkulov (UX/UI Developer of Dev Unity)
               </p>
             </div>
           </div>
         </div>
       </div>
 
-      <Footer darkMode={darkMode}/>
+      <Footer darkMode={darkMode} />
     </div>
   );
 };
